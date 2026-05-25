@@ -91,6 +91,8 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 body {
@@ -100,6 +102,7 @@ body {
     line-height: 1.6;
     transition: background-color var(--transition-normal), color var(--transition-normal);
     overflow-x: hidden;
+    max-width: 100%;
     position: relative;
     min-height: 100vh;
 }
@@ -1725,7 +1728,21 @@ footer {
 
     /* Mobile header/menu */
     .header-container {
-        padding: 1rem 2rem 1rem 1.5rem;
+        padding: 0 1.5rem;
+        height: 64px;
+    }
+    
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    .header-actions {
+        gap: 0.5rem;
+    }
+    
+    .control-btn {
+        width: 36px;
+        height: 36px;
     }
     
     .mobile-only {
@@ -1734,10 +1751,10 @@ footer {
     
     #navbar {
         position: fixed;
-        top: 80px;
+        top: 64px;
         left: -100%;
         width: 100%;
-        height: calc(100vh - 80px);
+        height: calc(100vh - 64px);
         background: var(--glass-bg);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
@@ -1897,11 +1914,26 @@ footer {
 /* Portrait phones */
 @media (max-width: 480px) {
     .container {
-        padding: 0 1.25rem;
+        padding: 0 1rem;
     }
     
     .header-container {
-        padding: 1rem 1.75rem 1rem 1.25rem;
+        padding: 0 1rem;
+        height: 60px;
+    }
+    
+    .logo {
+        font-size: 1.15rem;
+    }
+    
+    .control-btn {
+        width: 34px;
+        height: 34px;
+    }
+    
+    #navbar {
+        top: 60px;
+        height: calc(100vh - 60px);
     }
     
     .stats-row {
