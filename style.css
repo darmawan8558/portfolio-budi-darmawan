@@ -1725,7 +1725,7 @@ footer {
 
     /* Mobile header/menu */
     .header-container {
-        padding: 1rem 1.5rem;
+        padding: 1rem 2rem 1rem 1.5rem;
     }
     
     .mobile-only {
@@ -1901,7 +1901,7 @@ footer {
     }
     
     .header-container {
-        padding: 1rem 1.25rem;
+        padding: 1rem 1.75rem 1rem 1.25rem;
     }
     
     .stats-row {
