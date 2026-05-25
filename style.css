@@ -1724,6 +1724,10 @@ footer {
     }
 
     /* Mobile header/menu */
+    .header-container {
+        padding: 1rem 1.5rem;
+    }
+    
     .mobile-only {
         display: flex;
     }
@@ -1894,6 +1898,10 @@ footer {
 @media (max-width: 480px) {
     .container {
         padding: 0 1.25rem;
+    }
+    
+    .header-container {
+        padding: 1rem 1.25rem;
     }
     
     .stats-row {
