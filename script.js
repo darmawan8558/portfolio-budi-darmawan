@@ -96,12 +96,24 @@ function initMobileMenu() {
    ========================================================================== */
 function initHeaderScroll() {
     const header = document.getElementById('main-header');
+    const scrollIndicator = document.querySelector('.scroll-indicator');
     
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             header.classList.add('scrolled');
         } else {
             header.classList.remove('scrolled');
+        }
+        
+        // Fade out scroll indicator as user scrolls down
+        if (scrollIndicator) {
+            if (window.scrollY > 100) {
+                scrollIndicator.style.opacity = '0';
+                scrollIndicator.style.pointerEvents = 'none';
+            } else {
+                scrollIndicator.style.opacity = '1';
+                scrollIndicator.style.pointerEvents = 'auto';
+            }
         }
     });
 }
